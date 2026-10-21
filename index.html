@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Oviedo 1926-2026 | Oviedismo - Orgullo, Valor y Garra</title>
+  <meta name="description" content="Web no oficial del Real Oviedo. Noticias, plantilla 25/26, historia del centenario, peñas y el Carlos Tartiere.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 44%22><path d=%22M20 2 L36 10 L34 30 L20 42 L6 30 L4 10 Z%22 fill=%22%230033A0%22/><text x=%2220%22 y=%2226%22 text-anchor=%22middle%22 font-family=%22Anton%22 font-size=%2214%22 fill=%22white%22 font-weight=%22900%22>RO</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="wrap">
+      <div class="left">
+        <span class="gold">#RealOviedo1926</span>
+        <span style="opacity:.6">|</span>
+        <span class="hide-mobile" style="display:inline-flex;align-items:center;gap:8px"><span class="dot"></span>CENTENARIO 1926-2026</span>
+      </div>
+      <div style="display:flex;gap:16px">
+        <a href="#entradas">↗ ENTRADAS</a>
+        <a href="#tienda"><span style="background:var(--ov-gold);color:var(--ov-dark);padding:2px 6px;border-radius:4px;font-weight:800">$</span> TIENDA</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="#">
+        <div class="logo-mark">
+          <svg viewBox="0 0 40 44" width="24" height="24"><path d="M20 2 L36 10 L34 30 L20 42 L6 30 L4 10 Z" fill="#0033A0"/><text x="20" y="26" text-anchor="middle" font-family="Anton" font-size="14" fill="white" font-weight="900">RO</text></svg>
+        </div>
+        <div class="logo-text">
+          <div class="title">REAL OVIEDO</div>
+          <div class="sub">1926-2026 CENTENARIO</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <div class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></div>
+        <div class="nav-item has-sub">
+          <button class="nav-link">El Club ▾</button>
+          <div class="submenu">
+            <a href="#historia">Historia 1926-2026 <span>→</span></a>
+            <a href="#estadio">Estadio Carlos Tartiere <span>→</span></a>
+            <a href="#himno">Himno y Escudo <span>→</span></a>
+            <a href="#presidentes">Presidentes <span>→</span></a>
+            <a href="#cantera">Cantera El Requexón <span>→</span></a>
+          </div>
+        </div>
+        <div class="nav-item has-sub">
+          <button class="nav-link">Primer Equipo ▾</button>
+          <div class="submenu">
+            <a href="#plantilla">Plantilla 25/26 <span>→</span></a>
+            <a href="#cuerpo">Cuerpo Técnico <span>→</span></a>
+            <a href="#calendario">Calendario LaLiga <span>→</span></a>
+            <a href="#clasificacion">Clasificación <span>→</span></a>
+            <a href="#estadisticas">Estadísticas <span>→</span></a>
+          </div>
+        </div>
+        <div class="nav-item has-sub">
+          <button class="nav-link">Oviedismo ▾</button>
+          <div class="submenu">
+            <a href="#penas">Peñas <span>→</span></a>
+            <a href="#aficion">Afición <span>→</span></a>
+            <a href="#fondo">Fondo Norte <span>→</span></a>
+            <a href="#tour">Tartiere Tour <span>→</span></a>
+            <a href="#museo">Museo Azul <span>→</span></a>
+          </div>
+        </div>
+        <div class="nav-item has-sub">
+          <button class="nav-link">Actualidad ▾</button>
+          <div class="submenu">
+            <a href="#noticias">Noticias <span>→</span></a>
+            <a href="#cronicas">Crónicas <span>→</span></a>
+            <a href="#entrevistas">Entrevistas <span>→</span></a>
+            <a href="#videos">Vídeos <span>→</span></a>
+          </div>
+        </div>
+        <div class="nav-item"><a class="nav-link" href="#multimedia">Multimedia</a></div>
+      </nav>
+
+      <button class="hamb" id="hamb">☰</button>
+    </div>
+  </header>
+
+  <!-- MOBILE -->
+  <div class="mobile" id="mobile">
+    <div class="mobile-panel">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <div class="logo-text"><div class="title">REAL OVIEDO</div><div class="sub">MENÚ</div></div>
+        <button id="mobileClose" style="width:36px;height:36px;border-radius:50%;background:#F6F8FC">✕</button>
+      </div>
+      <details class="mobile-acc"><summary>El Club</summary><ul><li><a href="#">Historia</a></li><li><a href="#">Estadio Carlos Tartiere</a></li><li><a href="#">Himno y Escudo</a></li></ul></details>
+      <details class="mobile-acc"><summary>Primer Equipo</summary><ul><li><a href="#plantilla">Plantilla 25/26</a></li><li><a href="#">Calendario</a></li><li><a href="#">Clasificación</a></li></ul></details>
+      <details class="mobile-acc"><summary>Oviedismo</summary><ul><li><a href="#">Peñas</a></li><li><a href="#">Fondo Norte</a></li><li><a href="#">Museo Azul</a></li></ul></details>
+      <details class="mobile-acc"><summary>Actualidad</summary><ul><li><a href="#">Noticias</a></li><li><a href="#">Crónicas</a></li></ul></details>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"><img src="assets/img/hero-tartiere.webp" alt="Carlos Tartiere lleno"></div>
+    <div class="wrap">
+      <div>
+        <div class="badge"><span style="width:6px;height:6px;background:#00FF88;border-radius:50%"></span> LaLiga EA Sports · 2025/26 · En Primera</div>
+        <h1 class="font-display">VOLVIMOS.<br>SOMOS DE<br><span>PRIMERA.</span></h1>
+        <p class="sub">Cien años de oviedismo. La historia continúa en el Tartiere. 30.029 almas, una ciudad y el orgullo de un escudo centenario.</p>
+        <div class="hero-actions">
+          <a href="#noticias" class="btn btn-primary">Últimas noticias →</a>
+          <a href="#plantilla" class="btn btn-ghost">Ver plantilla 25/26</a>
+        </div>
+        <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+          <span style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);color:#fff;border-radius:999px;padding:8px 12px;font-family:Oswald;font-size:11px;letter-spacing:0.12em">ORGULLO, VALOR Y GARRA</span>
+          <span style="background:var(--ov-gold);color:var(--ov-dark);border-radius:999px;padding:8px 12px;font-family:Oswald;font-size:11px;letter-spacing:0.12em;font-weight:800">CENTENARIO 1926-2026</span>
+        </div>
+      </div>
+
+      <div class="match-card">
+        <div class="head">
+          <span class="live"><span class="live-dot"></span> PRÓXIMO PARTIDO</span>
+          <span style="font-family:Oswald;font-size:10px;letter-spacing:0.14em;opacity:.6">J11 LALIGA</span>
+        </div>
+        <div class="vs">
+          <div class="team"><div class="crest">RO</div>Real Oviedo</div>
+          <div class="score">VS</div>
+          <div class="team"><div class="crest" style="background:#FF6B00;color:#fff">VCF</div>Valencia</div>
+        </div>
+        <div style="margin-top:14px;background:#F6F8FC;border-radius:12px;padding:12px;display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-family:Oswald;font-size:11px;letter-spacing:0.12em;font-weight:700">CARLOS TARTIERE · 18:30</div>
+            <div style="font-size:11px;opacity:.6;margin-top:2px">Dom 26 Oct · 30.500 entradas vendidas</div>
+          </div>
+          <div id="countdown" style="font-family:Anton;font-size:14px;display:flex;gap:6px">--</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+          <a class="btn btn-primary" style="height:40px" href="#entradas">Comprar entrada</a>
+          <a class="btn" style="height:40px;background:#F6F8FC;border:1px solid rgba(8,30,63,0.1)" href="#previa">Previa →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>¡ HALA OVIEDO ! <i class="dot"></i> 30.029 ALMAS EN EL TARTIERE <i class="dot"></i> ORGULLO, VALOR Y GARRA <i class="dot"></i> 100 AÑOS DE AZUL <i class="dot"></i></span>
+      <span>¡ HALA OVIEDO ! <i class="dot"></i> 30.029 ALMAS EN EL TARTIERE <i class="dot"></i> ORGULLO, VALOR Y GARRA <i class="dot"></i> 100 AÑOS DE AZUL <i class="dot"></i></span>
+    </div>
+  </div>
+
+  <!-- PARTIDOS -->
+  <section class="section" style="display:grid;grid-template-columns:1.2fr 1fr;gap:18px" id="calendario">
+    <div style="background:#081E3F;color:#fff;border-radius:22px;padding:20px;display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <div style="font-family:Oswald;font-size:11px;letter-spacing:0.18em;color:var(--ov-gold)">ÚLTIMO RESULTADO · DERBI ASTURIANO</div>
+        <div style="font-family:Anton;font-size:28px;margin-top:8px">REAL OVIEDO 2-0 SPORTING</div>
+        <div style="font-size:12px;opacity:.6;margin-top:6px">Cazorla 34' · Viñas 81' · Tartiere lleno</div>
+      </div>
+      <div style="font-family:Anton;font-size:48px;color:var(--ov-gold)">2-0</div>
+    </div>
+    <div style="background:#fff;border-radius:22px;padding:18px;border:1px solid rgba(8,30,63,0.06);box-shadow:var(--shadow)">
+      <div style="font-family:Oswald;font-size:11px;letter-spacing:0.14em;font-weight:700">CLASIFICACIÓN LALIGA · J10</div>
+      <div style="margin-top:10px;display:flex;flex-direction:column;gap:8px;font-family:Oswald;font-size:12px">
+        <div style="display:flex;justify-content:space-between"><span>10. Getafe</span><span>15 pts</span></div>
+        <div style="display:flex;justify-content:space-between;background:#081E3F;color:#fff;padding:6px 10px;border-radius:8px"><span>12. REAL OVIEDO</span><span>14 pts</span></div>
+        <div style="display:flex;justify-content:space-between"><span>13. Mallorca</span><span>13 pts</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTICIAS -->
+  <section class="section" id="noticias">
+    <div class="section-head">
+      <div><div class="kicker">Actualidad azul</div><h2>ÚLTIMAS <span class="blue">NOTICIAS</span></h2></div>
+      <a href="#" class="btn" style="background:#fff;border:1px solid rgba(8,30,63,0.1);height:40px">Ver todas →</a>
+    </div>
+    <div class="news-grid">
+      <article class="news-card">
+        <div class="img"><img src="assets/img/hero-tartiere.webp" alt=""><span class="tag">Afición</span></div>
+        <div class="body"><div class="meta"><span>HOY</span><span>· 3 min</span></div><h3>El Tartiere ruge: récord de 30.029 abonados en el centenario</h3></div>
+      </article>
+      <article class="news-card">
+        <div class="img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0033A0,#081E3F);display:grid;place-items:center;color:#FFB81C;font-family:Anton;font-size:32px">CAZORLA 8</div><span class="tag" style="background:#FFB81C;color:#081E3F">Entrevista</span></div>
+        <div class="body"><div class="meta"><span>AYER</span><span>· 5 min</span></div><h3>Santi Cazorla: “El niño que se fue vuelve a casa para hacer historia”</h3></div>
+      </article>
+      <article class="news-card">
+        <div class="img"><div style="width:100%;height:100%;background:#F6F8FC;display:grid;place-items:center;font-size:40px">⚽️</div><span class="tag">Cantera</span></div>
+        <div class="body"><div class="meta"><span>20 OCT</span><span>· 2 min</span></div><h3>El Requexón sigue produciendo magia: 4 del Vetusta con el primer equipo</h3></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PLANTILLA -->
+  <section class="section" id="plantilla">
+    <div class="section-head">
+      <div><div class="kicker">LaLiga 25/26</div><h2>PLANTILLA <span class="blue">DESTACADA</span></h2></div>
+      <div class="filters">
+        <button class="filter active" data-pos="Todos">Todos</button>
+        <button class="filter" data-pos="Porteros">Porteros</button>
+        <button class="filter" data-pos="Defensas">Defensas</button>
+        <button class="filter" data-pos="Medios">Medios</button>
+        <button class="filter" data-pos="Delanteros">Delanteros</button>
+      </div>
+    </div>
+    <div class="players-grid" id="playersGrid"></div>
+  </section>
+
+  <!-- HISTORIA -->
+  <section class="section" id="historia">
+    <div class="kicker">1926-2026</div>
+    <h2 style="font-family:Anton;font-size: clamp(28px,4vw,44px);line-height:.95;margin-top:8px">100 AÑOS DE <span style="color:var(--ov-blue)">HISTORIA AZUL</span></h2>
+    <div class="timeline">
+      <div class="tl-track" id="tlTrack"></div>
+    </div>
+  </section>
+
+  <!-- OVIEDISMO -->
+  <section class="section" id="aficion">
+    <div class="ov-section">
+      <div>
+        <div class="kicker">Oviedismo puro</div>
+        <h2 style="font-family:Anton;font-size: clamp(28px,4vw,48px);line-height:.9;margin-top:12px">NO ES FÚTBOL.<br>ES <span style="color:var(--ov-blue)">OVIEDO.</span></h2>
+        <p style="margin-top:16px;color:rgba(8,30,63,0.7);line-height:1.6;font-size:14px">Somos la ciudad que bajó a Tercera y llenó el Tartiere igual. Somos las peñas que cruzan España en autobús. Ser del Oviedo no se elige, se hereda.</p>
+        <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+          <span style="background:#F6F8FC;border:1px solid rgba(8,30,63,0.1);border-radius:999px;padding:8px 12px;font-family:Oswald;font-size:11px;letter-spacing:0.1em">🟢 Fondo Norte en pie los 90'</span>
+          <span style="background:rgba(255,184,28,0.15);border:1px solid rgba(255,184,28,0.3);border-radius:999px;padding:8px 12px;font-family:Oswald;font-size:11px;letter-spacing:0.1em">♡ Cantamos hasta el final</span>
+        </div>
+      </div>
+      <div>
+        <div class="stat-grid">
+          <div class="stat"><div class="n">200</div><div class="l">Peñas oficiales</div><div class="s">En 15 países</div></div>
+          <div class="stat"><div class="n">20k</div><div class="l">Accionistas</div><div class="s">Populares</div></div>
+          <div class="stat"><div class="n">30k</div><div class="l">Abonados</div><div class="s">Récord histórico</div></div>
+        </div>
+        <div class="cta-box">
+          <div style="position:relative">Hazte peñista. Hazte parte<br>de la historia del centenario.</div>
+          <div style="margin-top:12px;display:flex;gap:8px;position:relative"><button class="btn btn-primary" style="flex:1">Hazte peñista →</button><button style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);color:#fff">♡</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="logo"><div class="logo-mark"><svg viewBox="0 0 40 44" width="20" height="20"><path d="M20 2 L36 10 L34 30 L20 42 L6 30 L4 10 Z" fill="#0033A0"/><text x="20" y="26" text-anchor="middle" font-family="Anton" font-size="12" fill="white">RO</text></svg></div><div class="logo-text"><div class="title" style="color:#fff">REAL OVIEDO</div><div class="sub" style="color:rgba(255,255,255,0.5)">1926-2026 CENTENARIO</div></div></div>
+          <p style="margin-top:12px;font-size:13px;color:rgba(255,255,255,0.6);line-height:1.5;max-width:340px">Web no oficial hecha por y para el oviedismo. Orgullo, valor y garra desde 1926. Hecha en Oviedo, para el Tartiere.</p>
+          <div class="social"><a href="#">X</a><a href="#">IG</a><a href="#">YT</a><a href="#">TT</a></div>
+        </div>
+        <div>
+          <div style="font-family:Oswald;font-size:11px;letter-spacing:0.18em;color:rgba(255,255,255,0.4)">MENÚ RÁPIDO</div>
+          <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:8px;font-family:Oswald;font-size:13px;text-transform:uppercase"><a href="#">Historia</a><a href="#">Estadio</a><a href="#">Plantilla</a><a href="#">Calendario</a><a href="#">Peñas</a><a href="#">Entradas</a></div>
+        </div>
+        <div>
+          <div style="font-family:Oswald;font-size:11px;letter-spacing:0.18em;color:rgba(255,255,255,0.4)">NEWSLETTER AZUL</div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <input id="newsletterInput" placeholder="Tu email oviedista" style="flex:1;height:44px;border-radius:999px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);padding:0 16px;color:#fff">
+            <button id="newsletterBtn" class="btn btn-primary" style="height:44px">Unirme</button>
+          </div>
+          <div style="margin-top:8px;font-size:11px;color:rgba(255,255,255,0.4)">Sin spam. Solo previa y crónica. Máx 1 por semana.</div>
+        </div>
+      </div>
+      <div class="foot-bottom"><span>© 1926-2026 Real Oviedo - Web no oficial de la afición</span><span>● Hecho con orgullo en Oviedo</span></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
